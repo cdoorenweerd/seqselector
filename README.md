@@ -1,9 +1,12 @@
 # seqselector
 
-Camiel Doorenweerd 2018
-Select a subset of sequences from a FASTA file using a csv file with a 
-list of matching sample names. Uses Biopython. 
+usage: seqselector.py [-h] -i  -w
 
-example usage: python seqselector.py masterfasta.fas wishlist.csv
+Select a subset of sequences from a FASTA file using a csv file with a list of
+target sample names.
 
-will produce a new fasta with only the sequences matching sample names found in the wishlist
+optional arguments:
+  -h, --help          show this help message and exit
+  -i , --fastainput   Inputfile in fasta format
+  -w , --wishlist     UTF-8 CSV list with exactly matching sequence names to
+                      select
